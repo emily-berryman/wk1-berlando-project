@@ -5,11 +5,11 @@ import { fetchFruits } from '../actions'
 
 export class App extends React.Component {
   state = {
-    fruits: []
+    // fruits: []
   }
 
   componentDidMount () {
-    this.props.dispatch(fetchFruits())
+    // this.props.dispatch(fetchFruits())
   }
 
   render () {
@@ -17,9 +17,9 @@ export class App extends React.Component {
       <div className='app'>
         <h1>Fullstack Boilerplate - with Fruits!</h1>
         <ul>
-          {this.props.fruits.map(fruit => (
+          {/* {this.props.fruits.map(fruit => (
             <li key={fruit}>{fruit}</li>
-          ))}
+          ))} */}
         </ul>
       </div>
     )
