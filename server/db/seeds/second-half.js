@@ -36,7 +36,7 @@ exports.seed = function(knex) {
         {
           id: 8, 
           quote: "when we resist change, it's called suffering"
-        }
+        },
         {
           id: 9, 
           quote: "I'm going to go out like a fucking meteor!"

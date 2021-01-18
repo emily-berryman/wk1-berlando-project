@@ -1,26 +1,25 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { fetchFruits } from '../actions'
+import { fetchQuotes } from '../actions'
+
+import Quotes from './Quotes'
 
 export class App extends React.Component {
   state = {
-    fruits: []
+    quotes: []
   }
 
   componentDidMount () {
-    this.props.dispatch(fetchFruits())
+    this.props.dispatch(fetchQuotes())
+    console.log('component did in fact mount')
   }
 
   render () {
     return (
       <div className='app'>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
-        <ul>
-          {this.props.fruits.map(fruit => (
-            <li key={fruit}>{fruit}</li>
-          ))}
-        </ul>
+        <h1>Are there any quotes?!</h1>
+      <Quotes />
       </div>
     )
   }
@@ -28,7 +27,7 @@ export class App extends React.Component {
 
 function mapStateToProps (globalState) {
   return {
-    fruits: globalState.fruits
+    quotes: globalState.quotes
   }
 }
 
