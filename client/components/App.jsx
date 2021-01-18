@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 
 import { fetchQuotes } from '../actions'
 
+import Quotes from './Quotes'
+
 export class App extends React.Component {
   state = {
     quotes: []
@@ -17,11 +19,7 @@ export class App extends React.Component {
     return (
       <div className='app'>
         <h1>Are there any quotes?!</h1>
-        {/* <ul>
-          {this.props.quotes.map(quote => (
-            <li key={quote}>{quote}</li>
-          ))}
-        </ul> */}
+      <Quotes />
       </div>
     )
   }
