@@ -7,8 +7,8 @@ const router = express.Router()
 // READ -- GET LIST OF BOOKS
 router.get('/', (req, res) => {
   getFirstHalf()
-      .then(quotes => {
-          res.json(quotes)
+      .then(quoteData => {
+          res.json(quoteData)
           //res.json means stringify the response & put it in JSON format so we can then deal with it this way
       })
       .catch(err => {
@@ -19,8 +19,8 @@ router.get('/', (req, res) => {
 
 router.get('/', (req, res) => {
   getSecondHalf()
-      .then(quotes => {
-          res.json(quotes)
+      .then(quoteData => {
+          res.json(quoteData)
       })
       .catch(err => {
           console.log('catch', err)
