@@ -31,19 +31,19 @@ exports.seed = function(knex) {
         },
         {
           id: 7, 
-          quote: 'rowValue3'
+          quote: 'how does the sea remember me '
         },
         {
           id: 8, 
-          quote: 'rowValue3'
+          quote: 'when i dare to be powerful '
         },
         {
           id: 9, 
-          quote: 'rowValue3'
+          quote: 'in the service of my vision'
         },
         {
           id: 10, 
-          quote: 'rowValue3'
+          quote: 'whether i am afraid'
         }
       ]);
     });
