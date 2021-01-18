@@ -1,6 +1,6 @@
 const express = require('express')
 
-const db = require('../db/quoteDBFuncs')
+const {getFirstHalf, getSecondHalf} = require('../db/quoteDBFuncs')
 
 const router = express.Router()
 

@@ -10,6 +10,7 @@ export class App extends React.Component {
 
   componentDidMount () {
     this.props.dispatch(fetchQuotes())
+    console.log('component did in fact mount')
   }
 
   render () {
