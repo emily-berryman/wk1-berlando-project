@@ -4,28 +4,29 @@ const db = require('../db/quoteDBFuncs')
 
 const router = express.Router()
 
+// READ -- GET LIST OF BOOKS
 router.get('/', (req, res) => {
-  db.getFirstHalf()
-    .then(results => {
-      res.json({ fruits: results.map(quote => quote.name) })
-      return null
-    })
-    .catch(err => {
-      console.log(err)
-      res.status(500).json({ message: 'Somthing went wrong' })
-    })
+  getFirstHalf()
+      .then(quotes => {
+          res.json(quotes)
+          //res.json means stringify the response & put it in JSON format so we can then deal with it this way
+      })
+      .catch(err => {
+          console.log('catch', err)
+          res.status(500).json({ message: 'Something broke' })
+      })
 })
 
 router.get('/', (req, res) => {
-  db.getSecondHalf()
-    .then(results => {
-      res.json({ fruits: results.map(quote => quote.name) })
-      return null
-    })
-    .catch(err => {
-      console.log(err)
-      res.status(500).json({ message: 'Somthing went wrong' })
-    })
+  getSecondHalf()
+      .then(quotes => {
+          res.json(quotes)
+      })
+      .catch(err => {
+          console.log('catch', err)
+          res.status(500).json({ message: 'Something broke' })
+      })
 })
+
 
 module.exports = router
