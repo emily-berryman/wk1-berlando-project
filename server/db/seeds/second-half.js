@@ -18,31 +18,31 @@ exports.seed = function(knex) {
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 4, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 5, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 6, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 7, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 8, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 9, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 10, 
           quote: 'rowValue3'
         }
       ]);

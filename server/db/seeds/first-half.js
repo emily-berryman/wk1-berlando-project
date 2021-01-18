@@ -7,42 +7,42 @@ exports.seed = function(knex) {
       return knex('first-half').insert([
         {
           id: 1, 
-          quote: 'some cute lil luxury item'
+          quote: 'some cute lil luxury item '
         },
         {
           id: 2, 
-          quote: 'portal for healing'
+          quote: 'portal for healing '
         },
         {
           id: 3, 
-          quote: 'youve worked like a machine'
+          quote: 'youve worked like a machine '
         },
         {
-          id: 3, 
+          id: 4, 
+          quote: 'gravely dissapointed with '
+        },
+        {
+          id: 5, 
+          quote: 'her shackles are very different from my own '
+        },
+        {
+          id: 6, 
+          quote: 'i am going to write fire '
+        },
+        {
+          id: 7, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 8, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
+          id: 9, 
           quote: 'rowValue3'
         },
         {
-          id: 3, 
-          quote: 'rowValue3'
-        },
-        {
-          id: 3, 
-          quote: 'rowValue3'
-        },
-        {
-          id: 3, 
-          quote: 'rowValue3'
-        },
-        {
-          id: 3, 
+          id: 10, 
           quote: 'rowValue3'
         }
       ]);
