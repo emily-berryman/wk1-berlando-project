@@ -8,24 +8,31 @@ class Quotes extends React.Component {
   
   
   state = {
-    currentQuotes: "test"
+    currentFirstQuotes: "test",
+    currentSecondQuotes: "test"
   }
   
-  randomQuote = () => {
-    let randomQuoteIndex = Math.floor((Math.random() * this.props.quotes.length))
-    console.log(this.props.quotes[randomQuoteIndex].quote)
-    return this.props.quotes[randomQuoteIndex].quote  
+  randomFirstQuote = () => {
+    // console.log(this.props.first[0].quote)
+    let randomFirstQuoteIndex = Math.floor((Math.random() * this.props.first.length))
+    return this.props.first[randomFirstQuoteIndex].quote  
+  }
+  randomSecondQuote = () => {
+    let randomSecondQuoteIndex = Math.floor((Math.random() * this.props.second.length))
+    // console.log(this.props.second[randomSecondQuoteIndex].quote)
+    return this.props.second[randomSecondQuoteIndex].quote  
   }
 
   handleClick = (e) => {
     e.preventDefault()
 
-    console.log('button has been clikced')
+    // console.log('button has been clicked')
 
     this.setState ({
-      currentQuotes: this.randomQuote()
+      currentFirstQuotes: this.randomFirstQuote(),
+      currentSecondQuotes: this.randomSecondQuote()
     })
-    console.log(this.state.currentQuotes)
+    // console.log(this.state.currentFristQuotes)
   }
 
   // quote = () => {
@@ -41,9 +48,10 @@ class Quotes extends React.Component {
           <div>
             <h1>here is a list of incredible quote!</h1>
             <div>
-              <ul>
+              <p>{this.state.currentFristQuotes} {this.state.currentSecondQuotes}</p>
+              {/* <ul>
                 <li>{this.state.currentQuotes}</li>
-              </ul>
+              </ul> */}
             </div>
             <button onClick={this.handleClick}>click to get a quotes</button>
           </div>  
@@ -51,10 +59,11 @@ class Quotes extends React.Component {
       )
     }
   }
-function mapStateToProps (globalState) {
-  return {
-    quotes: globalState.quotes,
+  function mapStateToProps (globalState) {
+    return {
+      first: globalState.first,
+      second: globalState.second
+    }
   }
-}
 
 export default connect(mapStateToProps)(Quotes)

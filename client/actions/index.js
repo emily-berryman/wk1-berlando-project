@@ -6,16 +6,16 @@ import { getFirstQuotes, getSecondQuotes } from '../apis/quotesAPI'
 export const ADD_FIRST_QUOTES = 'ADD_FIRST_QUOTES'
 export const ADD_SECOND_QUOTES = 'ADD_SECOND_QUOTES'
 
-export function addFirstQuotes (quotes) {
+export function addFirstQuotes (first) {
   return {
     type: ADD_FIRST_QUOTES,
-    quotes
+    first
   }
 }
-export function addSecondQuotes (quotes) {
+export function addSecondQuotes (second) {
   return {
     type: ADD_SECOND_QUOTES,
-    quotes
+    second
   }
 }
 
@@ -36,8 +36,8 @@ export function addSecondQuotes (quotes) {
 export function fetchFirstQuotes () {
   return dispatch => {
     return getFirstQuotes()
-      .then(quotes => {
-        dispatch(addFirstQuotes(quotes))
+      .then(first => {
+        dispatch(addFirstQuotes(first))
         return null
       })
   }
@@ -45,8 +45,8 @@ export function fetchFirstQuotes () {
 export function fetchSecondQuotes () {
   return dispatch => {
     return getSecondQuotes()
-      .then(quotes => {
-        dispatch(addSecondQuotes(quotes))
+      .then(second => {
+        dispatch(addSecondQuotes(second))
         return null
       })
   }

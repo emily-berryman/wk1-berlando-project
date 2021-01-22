@@ -5,7 +5,7 @@ const initialState = []
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_SECOND_QUOTES:
-      return action.quotes
+      return action.second
     default:
       return state
   }

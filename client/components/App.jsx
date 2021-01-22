@@ -6,14 +6,15 @@ import { fetchFirstQuotes, fetchSecondQuotes } from '../actions'
 import Quotes from './Quotes'
 
 export class App extends React.Component {
-  state = {
-    quotes: []
-  }
+  // state = {
+  //   firstQuotes: [],
+  //   secondQuotes: []
+  // }
 
   componentDidMount () {
     this.props.dispatch(fetchFirstQuotes())
     this.props.dispatch(fetchSecondQuotes())
-    console.log('component did in fact mount')
+    // console.log('component did in fact mount')
   }
 
   render () {
@@ -28,7 +29,8 @@ export class App extends React.Component {
 
 function mapStateToProps (globalState) {
   return {
-    quotes: globalState.quotes
+    first: globalState.first,
+    second: globalState.second
   }
 }
 

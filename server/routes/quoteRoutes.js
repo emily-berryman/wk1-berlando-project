@@ -9,7 +9,7 @@ router.get('/first', (req, res) => {
   getFirstHalf()
       .then(quoteData => {
           res.json(quoteData)
-          console.log(quoteData)
+        //   console.log(quoteData)
 
           //res.json means stringify the response & put it in JSON format so we can then deal with it this way
       })
@@ -23,7 +23,7 @@ router.get('/second', (req, res) => {
   getSecondHalf()
       .then(quoteData => {
           res.json(quoteData)
-          console.log(quoteData)
+        //   console.log(quoteData)
       })
       .catch(err => {
           console.log('catch', err)
