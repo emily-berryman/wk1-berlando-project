@@ -1,4 +1,4 @@
-import { getQuotes } from '../apis/quotesAPI'
+import { getFirstHalf, getSecondHalf } from '../apis/quotesAPI'
 
 //test
 
@@ -11,9 +11,14 @@ export function addQuotes (quotes) {
   }
 }
 
+function getAllQuotes() {
+  getFirstHalf()
+  getSecondHalf()
+}
+
 export function fetchQuotes () {
   return dispatch => {
-    return getQuotes()
+    return getAllQuotes()
       .then(quotes => {
         dispatch(addQuotes(quotes))
         return null
