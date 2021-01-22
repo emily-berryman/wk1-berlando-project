@@ -9,11 +9,12 @@ class Quotes extends React.Component {
   
   state = {
     currentFirstQuotes: "test",
-    currentSecondQuotes: "test"
+    currentSecondQuotes: "secondTest"
   }
   
   randomFirstQuote = () => {
     // console.log(this.props.first[0].quote)
+    
     let randomFirstQuoteIndex = Math.floor((Math.random() * this.props.first.length))
     return this.props.first[randomFirstQuoteIndex].quote  
   }
@@ -48,7 +49,7 @@ class Quotes extends React.Component {
           <div>
             <h1>here is a list of incredible quote!</h1>
             <div>
-              <p>{this.state.currentFristQuotes} {this.state.currentSecondQuotes}</p>
+              <p>{this.state.currentFirstQuotes} ---- {this.state.currentSecondQuotes}</p>
               {/* <ul>
                 <li>{this.state.currentQuotes}</li>
               </ul> */}
