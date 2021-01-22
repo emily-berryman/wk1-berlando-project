@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { fetchQuotes } from '../actions'
+import { fetchFirstQuotes, fetchSecondQuotes } from '../actions'
 
 import Quotes from './Quotes'
 
@@ -11,7 +11,8 @@ export class App extends React.Component {
   }
 
   componentDidMount () {
-    this.props.dispatch(fetchQuotes())
+    this.props.dispatch(fetchFirstQuotes())
+    this.props.dispatch(fetchSecondQuotes())
     console.log('component did in fact mount')
   }
 
