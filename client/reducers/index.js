@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 
-import quotes from './quotes'
+import first from './firstQuotes'
+import second from './secondQuotes'
 
 export default combineReducers({
-  quotes
+  first,
+  second
 })
