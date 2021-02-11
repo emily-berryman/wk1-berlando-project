@@ -46,15 +46,31 @@ class Quotes extends React.Component {
 
       return (
         <>
-          <div>
-            <h1>here is a list of incredible quote!</h1>
+          <div className="quotes">
+            <h1 className="subtitle">here is a list of incredible quotes!</h1>
             <div>
-              <p>{this.state.currentFirstQuotes} ---- {this.state.currentSecondQuotes}</p>
+             <button className="generate" onClick={this.handleClick}>click to get a quote</button>
+             
+      
+          <div className= 'scroll-image-and-quote'>
+              <img src='scroll.png' alt="description"/>
+
+              <div className= 'quote-div'>
+            <p className= 'quote'>{this.state.currentFirstQuotes} 
+            <br/> ---- 
+            <br/> {this.state.currentSecondQuotes}</p> 
+              </div>
+          </div>
+          
+          
+
+      
+       
               {/* <ul>
                 <li>{this.state.currentQuotes}</li>
               </ul> */}
             </div>
-            <button onClick={this.handleClick}>click to get a quotes</button>
+            
           </div>  
         </>
       )

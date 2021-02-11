@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
-
 @import
   'variables';
 
@@ -7,14 +5,11 @@
   'base/base',
   'base/typography';
 
-  @import
+@import
 
-  'layout/a_header',
-  'layout/b_quotes',
-  'layout/c_generate',
-  'layout/d_footer';
+ 'layout/a_header',
+ 'layout/b_quotes',
+ 'layout/c_generate',
+ 'layout/d_footer';
 
-html, 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
+

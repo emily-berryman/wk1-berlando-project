@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
 //PALETTES ARE BEING EXPERIMENTED
 $background-color: #42b883;
@@ -8,6 +9,7 @@ $secondary-color: #faecc9;
 $header-color: #faecc9;
 $text-color: #2d4a4d;
 $text-color-tense: #2d4a4d;
+
 $btnBorderRadius: 3px;
 $btn-hover-color: orange; // TO BE CHANGED LATER
 $font-stack: 'Roboto', sans-serif; //TO BE CHANGED LATER
@@ -21,11 +23,12 @@ $font-large: 50px;
 $font-larger: 75px;
 $font-Xlarge: 100px;
 $text-shadow: 0 0 6px #000;
-
 $borderRadius: 3px;
+
 $box-shadow:
   0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 $box-shadow-inset:
   inset 0 -0.6em 1em -0.35em 
   rgba(0,0,0,0.17),
@@ -35,10 +38,7 @@ $box-shadow-inset:
   rgba(255,255,255,0.12);
 
 
-//VARIABLES ARE MADE OF MVP
-//COLOR BLOCKS ARE FOR DISPLAYING PURPOSE + STYLING TEXT COMPONENTS --- ish
-//BRIEFLY SETTING UP SASS FOR WHEN DESIGN ARE FINALIZED
-//---JESS---
+
 
 //BACKGROUND COLORS
 $backgroundcolor01: #f8f7de;
@@ -46,9 +46,7 @@ $backgroundcolor02: #d35d6e;
 $backgroundcolor03: #d0e8f2;
 $backgroundcolor04: #8db596;
 
-//MARGIN + PADDING SPACINGS
-$temp-margin: 30px;
-$temp-padding: 20px;
+
 
 //COLORS
 $commonNameFontColor: #222831;

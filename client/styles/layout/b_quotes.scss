@@ -1,73 +1,52 @@
-.plantListSearch {
-  display: flex;
-  justify-content: center;
-  margin: 2em 0em 2em 0em;
+
+
   
-  input {
-    align-self: center;
-    width: 30vw;
-    height: 5vh;
-    border: 2px solid #307256;
-    // border-radius: 10px;
-    font-size: 2.5vw;
-    color: #307256;
-    padding-left: 1.5%;
-    padding-top: .2em;
-    padding-bottom: .2em;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: #D3D3D3;
-    background: transparent;
-  }
-  input:focus {
-    border-color: #307256;
-  }
-
-  input:focus::-webkit-input-placeholder { color:transparent; }
-  input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
-  input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
-  input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
-
-  ::placeholder {
-    color: #D3D3D3;
-  }
-}
-
-.userPlantSearch {
-  display: flex;
-  justify-content: center;
-  margin: 2em 0em 2em 0em;
+  .scroll-image-and-quote {
   
-  input {
-    align-self: center;
-    width: 30vw;
-    height: 5vh;
-    border: 2px solid #307256;
-    // border-radius: 10px;
-    font-size: 2.5vw;
-    color: #307256;
-    padding-left: 1.5%;
-    padding-top: .2em;
-    padding-bottom: .2em;
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: $text-color;
-    background: transparent;
+    position: relative;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 2px;
+    margin: 2px;
+    border: 2px;  
+      img {
+        /* display: flex; */
+        opacity: 0.5;
+        align-items: center;
+        justify-content: space-around;
+        width: 750px;
+        border: 5px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 2px;
+    }   
   }
-  input:focus {
-    border-color: #307256;
+  
+  
+  
+  .quote-div {
+    width: 600px;
+    position: absolute;
+    top: 20%;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
   }
-
-  input:focus::-webkit-input-placeholder { color:transparent; }
-  input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
-  input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
-  input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
-
-  ::placeholder {
-    color: $text-color;
+  .quote {
+    font-size: $font-large; 
+    color: aliceblue;
+    border: 0;
+    margin: 5px;
+    display: block;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+    text-shadow: $text-shadow;
   }
-
-}
-.hidden{
-  display: none;
-}
+  
